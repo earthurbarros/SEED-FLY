@@ -1605,21 +1605,7 @@
 </body>
 
 <script>
-        async function getUser(place) {
-            const api_url = `https://timezone.abstractapi.com/v1/current_time/?api_key=YOUR_API_KEY&location=${place}`
-            
-            const response = await fetch(api_url);
-            
-            const data = await response.json();
-            
-            time = await data.datetime
-            // arr = Array.from(time)
-            // arr.splice(0, 11)
-            // arr.toString()
-            // timezone = (arr.splice(0, 5)).join("");
-            document.getElementById("time").innerText = `${place}'s time = ${time} ${data.timezone_abbreviation}`
-
-    }
+       
 
     document.querySelectorAll(".allPaths").forEach(e => {
         e.setAttribute('class', `allPaths ${e.id}`);
