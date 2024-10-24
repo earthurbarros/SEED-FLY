@@ -8,14 +8,16 @@
 
 </head>
 
-<style>
-    * {
+
+
+    <style>
+        * {
         margin: 0;
         padding: 0;
     }
 
     .logo {
-        width: 10rem;  
+        width: 50px;  
         margin: 0 auto;
     }
 
@@ -52,11 +54,10 @@
         cursor: pointer;
     }
 
-</style>
 
-<div class="logo">
-    <image class="logo" src="./Logo.jpeg">
-</div>
+
+    </style>
+
     
 
 <body id="body">
@@ -68,7 +69,7 @@
 
 
     <div id="timeCont">
-        <p id="time">Time</p>
+        <img class="logo" src="Logo.jpeg">
     </div>
 
     <svg id="allSvg" baseprofile="tiny" fill="#ececec" stroke="black" stroke-linecap="round" stroke-linejoin="round"
@@ -1605,7 +1606,7 @@
 </body>
 
 <script>
-       
+
 
     document.querySelectorAll(".allPaths").forEach(e => {
         e.setAttribute('class', `allPaths ${e.id}`);
